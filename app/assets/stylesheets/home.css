@@ -1,0 +1,157 @@
+/* general styles */
+body {
+    font-family: Arial, San-Serif;
+    font-size: 100%;
+}
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-size: 13px;
+    line-height: 1.3em;
+}
+
+/* header styles */
+.header {
+    padding: 20px, 0;
+    background-color: grey;
+}
+
+.header_items_outer {
+    padding: 5px;
+    width: auto;
+}
+
+.header_items_outer .container_img {
+    float:left;   
+    width: 120px;
+    height: 120px;
+}
+
+.container_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.header_items_outer .container_text {
+    width: auto;
+    height: auto;
+}
+
+.container_text h1,
+.container_text h2 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* navigation styles */
+.navigation {
+    background-color: #222;
+    border-color: №010101;
+    min-height: 64px;
+}
+.navigation li {
+    float: left;
+    width: 100px;
+}
+.navigation a {
+    display: block;
+    color: #9d9d9d;
+    line-height: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+.navigation li a:hover{
+    color:gainsboro;
+    background-color: black;
+}
+
+/* login style */
+.login {
+    padding: 15px 0;
+    float: right;
+}
+.login input[type="text"],
+.login input[type="password"] {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+.login input[type="submit"] {
+    padding: 5px 15px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.login input[type="submit"]:hover {
+    color:yellowgreen;
+    background-color: black;
+    border: 1px solid transparent;
+}
+
+/* main content */
+.articles_array {
+    overflow: auto;
+}
+.container_title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #777;
+    font-size: 36px;
+}
+.container_title small {
+    color: #777;
+    font-size: 70%;
+}
+.article_outer {
+    display: inline-block;
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 50%;
+    box-sizing: border-box;
+}
+.articles_array>div:first-child {
+    padding-left: 0;
+    padding-right: 5px;
+}
+.articles_array>div:last-child {
+    padding-left: 5;
+    padding-right: 0px;
+}
+.article {
+    border: 1px solid #959595;
+    display: inline-block;
+}
+.article img {
+    width: 100px;
+    height: 100px;
+}
+
+.article h3 {
+    color: grey;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* footer */
+.footer {
+    background-color: darkgrey;
+    color: black;
+    padding:10px 0;
+    margin-top: 30px;
+}
