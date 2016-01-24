@@ -1,5 +1,14 @@
 <h1>This is a new articles page</h1>
 
+<% if @article.errors.any? %>
+<h2>These are an errors which appeared during creation an article</h2>
+  <ul>
+    <% @article.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %> <br/>
+
 <%= form_for @article do |f| %>
   <p>
     <%= f.label :title %><br/>
