@@ -6,75 +6,34 @@
         <link rel="stylesheet" type="text/css" href="home.css">
     </head>
     <body>
-        <header class="header">
-            <div class="container">
-                <div class="header_items_outer">
-                    <div class="container_img">
-                        <img src="Ruby_logo.png">
-                    </div>
-                    <div class="container_text">
-                        <h1>Keep calm and learn Ruby on Rails</h1>
-                        <h2>It's a powerfull language with a huge community</h2>
+        <!-- start jumbotron module -->
+        <div class="jumbotron">
+          <h1>Let's discover together!</h1><br/>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button" style="margin-top: 150px; margin-left: 740px">Sign in</a></p>
+        </div> 
+        <!-- end jumbotron module -->
+        
+        <!--start main page articles content -->
+        <main>
+            <h2 class="container_title">Some interesting articles <small>about Ruby</small></h2>
+            <div class="articles_array">
+                <div class="article_outer">
+                    <div class="article">
+                        <h3>some article name</h3>
+                        <img src="images/rails.jpeg">
+                        <p>This guide is designed for beginners who want to get started with a Rails application from scratch. It does not assume that you have any prior experience with Rails. However, to get the most out of it, you need to have some prerequisites installed:</p>
                     </div>
                 </div>
-            </div>
-        </header>
-        <!-- start navigation menu -->
-        <nav class="navigation">
-            <div class="container">
-                <ul>
-                    <li><a>
-                      <%=  link_to 'Home', root_path %>
-                    </a></li>
-                    <li><a>
-                      <%=  link_to 'About Ruby', about_path %>
-                    </a></li>
-                    <li><a>
-                      <%= link_to 'Articles', articles_path %>  
-                    </a></li>             
-                </ul>
-                <!-- start login form -->
-                <form class="login" action="#">
-                    <input type="text" placeholder="login" required>
-                    <input type="password" placeholder="password" required>
-                    <input type="submit" value="sign in">
-                </form>
-                <!-- end login form -->
-            </div>
-        </nav>
-        <!-- end navigation menu -->
-        
-        <!--start main page content -->
-        <main>
-            <div class="container">
-                <h2 class="container_title">Some interesting articles <small>about Ruby</small></h2>
-                <div class="articles_array">
-                    <div class="article_outer">
-                        <div class="article">
-                            <h3>some article name</h3>
-                            <img src="images/rails.jpeg">
-                            <p>This guide is designed for beginners who want to get started with a Rails application from scratch. It does not assume that you have any prior experience with Rails. However, to get the most out of it, you need to have some prerequisites installed:</p>
-                        </div>
-                    </div>
-                    <div class="article_outer">
-                        <div class="article">
-                            <h3>some article name</h3>
-                            <img src="images/rails2.jpeg">
-                            <p>Rails is a web application framework running on the Ruby programming language. If you have no prior experience with Ruby, you will find a very steep learning curve diving straight into Rails. There are several curated lists of online resources for learning Ruby</p>
-                        </div>
+                <div class="article_outer">
+                    <div class="article">
+                        <h3>some article name</h3>
+                        <img src="images/rails2.jpeg">
+                        <p>Rails is a web application framework running on the Ruby programming language. If you have no prior experience with Ruby, you will find a very steep learning curve diving straight into Rails. There are several curated lists of online resources for learning Ruby</p>
                     </div>
                 </div>
             </div>
         </main>
-        <!--end main page content -->
+        <!--end main page articles content -->
         
-        <!-- start footer -->
-        <footer class="footer">
-            <div class="container">
-                <p>Copyright All rights reserved</p>
-                <p>My laboratory 2016</p>
-            </div>
-        </footer>
-        <!-- end footer -->
     </body>
 </html>
