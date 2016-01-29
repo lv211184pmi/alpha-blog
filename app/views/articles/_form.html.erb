@@ -1,13 +1,5 @@
-<% if @article.errors.any? %>
-<div class="alert alert-danger" role="alert"> 
-  <h2>These are an errors which appeared during creation an article</h2>
-    <ul>
-      <% @article.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-      <% end %>
-    </ul>
-</div>  
-<% end %> <br/>
+<%= render 'share/errors', obj: @article %>
+
 
 <div class = "row">
   <div class = "col-xs-12">
