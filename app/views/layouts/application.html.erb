@@ -14,6 +14,8 @@
     <%= yield %>
   </div>
   <%= render 'layouts/footer' %>
+  #this will show all the params for viewed page
+  <%= debug(params) if Rails.env.development? %>
 
 </body>
 </html>
