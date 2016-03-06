@@ -9,10 +9,12 @@
         <!-- start jumbotron module -->
         <div class="jumbotron">
           <h1>Let's discover together!</h1><br/>
-          <p><a class="btn btn-primary btn-lg" 
-                href="/signup" 
-                role="button">Sign in</a>
-          </p>
+          <% if !logged_in? %>
+              <p><a class="btn btn-primary btn-lg" 
+                    href="/signup" 
+                    role="button">Sign in</a>
+              </p>
+          <% end %>
         </div> 
         <!-- end jumbotron module -->
         
