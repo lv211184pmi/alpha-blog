@@ -61,9 +61,9 @@ before_action :require_same_user, only: [:edit, :update, :destroy]
     end
     
     def require_same_user
-      if current_user != @article.user
+      if current_user != @article.user and !current_user.admin?
         flash[:danger] = "You con edit or destroy only your own articles"
-        redirect_to root_path
+        redirect_to articles_path
       end
     end
   
